@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Full name: {{ player.Full_name }}</h1>
+
+  <p><strong>Club:</strong> <a href="{{ player.current_club.get_absolute_url }}">{{ player.current_club }}</a></p> <!-- 
+  defined -->
+  <p><strong>Position:</strong> {{ player.position }}</p>
+  <p><strong>Nationality:</strong> {{ player.nationality }}</p> 
+  <p><strong>Age:</strong> {{ player.age }}</p>
+  <p><strong>Information:</strong> {{ player.information }}</p>   
+  
+{% endblock %}

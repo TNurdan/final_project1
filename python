@@ -1,0 +1,5 @@
+Migrations for 'catalog':
+  catalog\migrations\0001_initial.py
+    - Create model Club
+    - Create model Position
+    - Create model Player

@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Footstats</h1>
+
+  <p>Welcome to <em>Players statistics</em>, a  website developed as a football players stats.</p>
+
+<h2>Dynamic content</h2>
+
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Players:</strong> {{ num_players }}</li>
+    <li><strong>Clubs:</strong> {{ num_clubs }}</li>
+  </ul>
+<p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+{% endblock %}
